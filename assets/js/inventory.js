@@ -156,7 +156,7 @@ delet.addEventListener("click", (event) => {
         producto.deleteProducto();
         alert.classList.add('alert', 'alert-success');
         alert.innerText = " el producto fue eliminado exitosamente"
-        mostrarTabla(producto.getProducto());
+        location.reload();
         timeRemove();
     } else {
         alert.classList.add('alert', 'alert-danger');

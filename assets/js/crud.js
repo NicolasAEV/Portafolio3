@@ -16,7 +16,6 @@ export default class productos {
     }
     //obtenemos todos los productos
     getProductos(){
-      
        return carritos;
     }
     //obtenemos un solo producto
@@ -60,10 +59,10 @@ export default class productos {
     }
     //eliminamos un producto
     deleteProducto(){
-        // con .find buscamos todos los productos que no contengan el id
-        let carritos = carritos.find(producto => producto.id != this.id);
+        // con .filter buscamos todos los productos que no contengan el id
+        let newCarritos = carritos.filter(producto => producto.id != this.id);
         //guardamos en el local storage
-         localStorage.setItem("carritos", JSON.stringify(carritos));
+         localStorage.setItem("carritos", JSON.stringify(newCarritos));
          return carritos
     }
 }

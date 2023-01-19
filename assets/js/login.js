@@ -8,7 +8,7 @@ document.getElementById("login").addEventListener("click", function(event){
     let password = document.getElementById("password").value;
 
     let encontrado = usuarios.find(usuario => usuario.nombre == nombre && usuario.password == password)
-
+    
     if(encontrado){
         alert("Usuario autenticado.");
         location.href= "./index.html";

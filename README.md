@@ -29,6 +29,7 @@ $ cd ../path/to/the/file
 ***
 perfil github https://github.com/NicolasAEV/Portafolio3
 deploy https://nicolasaev.github.io/Portafolio3/
+para acceder al modulo creado directamente es https://nicolasaev.github.io/Portafolio3/views/inventario.html
 
 ## usuario
 ***
