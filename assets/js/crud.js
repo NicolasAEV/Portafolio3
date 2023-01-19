@@ -60,7 +60,7 @@ export default class productos {
     //eliminamos un producto
     deleteProducto(){
         // con .filter buscamos todos los productos que no contengan el id
-        let newCarritos = carritos.filter(producto => producto.id != this.id);
+         let newCarritos = carritos.filter(producto => producto.id != this.id);
         //guardamos en el local storage
          localStorage.setItem("carritos", JSON.stringify(newCarritos));
          return carritos
