@@ -18,22 +18,4 @@ document.getElementById("sign-up").addEventListener("click", function(event){
     }
 })
 //clase y funciones
-class usuario {
-    cronstructor(idUser ,nombre , password = "",email = '') {
-        this.idUser = idUser;
-        this.nombre = nombre;
-        this.password = password;
-        this.email = email;
-    }
-    addProducto(){
-        productos.find(producto => producto.email == this.email);
-        productos.push(
-            {
-                idUser: this.idUser,
-                nombre:  this.nombre,
-                password: this.password,
-                email: this.email ,
-            }
-            )
-    }
-}
+
